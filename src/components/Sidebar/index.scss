@@ -10,14 +10,12 @@
   .logo {
     display: block;
     padding: 8px 0;
-    color: white;
 
     img {
       display: block;
       margin: 8px auto;
-      width: 40px;
+      width: 24px;
       height: auto;
-      color: white;
 
       &.sub-logo {
         width: 50px;
@@ -94,16 +92,17 @@
 
     a.about-grad {
       &:after {
-        content: 'EDUCATION';
+        content: 'PORTFOLIO';
       }
     }
 
-    a.active{
-      svg{
+    a.active {
+      svg {
         color: #ffd700;
       }
     }
   }
+
   ul {
     position: absolute;
     bottom: 20px;
@@ -129,5 +128,65 @@
         }
       }
     }
+  }
+}
+
+.hamburger-icon, .close-icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .nav-bar { 
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+     ul, nav {
+      display: none;
+     }
+
+     nav {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      background: #181818;
+      height: 100%;
+      margin: 0;
+      z-index: 2;
+      position: absolute;
+      
+      &.mobile-show {
+        display: block;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10PX;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+     }
+
+     .hamburger-icon,
+     .close-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: block;
+     }
   }
 }

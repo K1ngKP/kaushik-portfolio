@@ -3,7 +3,7 @@
  import LogoS from '../../assets/images/logo-s.png'
  import LogoSubtitle from '../../assets/images/logo_sub.png'
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
- import {faHome, faUser, faEnvelope, faGraduationCap} from '@fortawesome/free-solid-svg-icons'
+ import {faHome, faUser, faEnvelope, faGraduationCap, faBars, faClose} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 
 import { Link, NavLink } from 'react-router-dom'
@@ -20,6 +20,7 @@ const Sidebar = () => {
         <img src={LogoS} alt="Logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
       </Link>
+      
        <nav className={showNav ? 'mobile-show' : ''}>
          <NavLink 
            exact="true"
@@ -52,7 +53,12 @@ const Sidebar = () => {
            onClick={() => setShowNav(false)}>
            <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
          </NavLink>
-         
+         <FontAwesomeIcon 
+          onClick={() => setShowNav(false)}
+          icon={faClose}
+          color="#ffd700"
+          size="3x"
+          className='close-icon' />
          </nav>
           <ul>
             <li>
@@ -74,6 +80,12 @@ const Sidebar = () => {
               </a>
             </li>
           </ul>
+          <FontAwesomeIcon 
+          onClick={() => setShowNav(true)}
+          icon={faBars}
+          color="#ffd700"
+          size="3x"
+          className='hamburger-icon' />
     </div>
   )
  }
