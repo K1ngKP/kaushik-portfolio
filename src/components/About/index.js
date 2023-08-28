@@ -10,7 +10,7 @@ import {
     faCss3,
     faJava
 
-} from '@fortawesome/free-brands-svg-icons'
+} from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
 
 
