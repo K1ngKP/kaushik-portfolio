@@ -4,6 +4,8 @@ import './index.scss'
 import Logo from './Logo'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
+
+
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
    const nameArray = ['K', 'a', 'u', 's', 'h', 'i', 'k']
@@ -59,6 +61,7 @@ const Home = () => {
         </div>
           
       </div>
+      <Loader type='pacman'></Loader>
     </>
   )
 }

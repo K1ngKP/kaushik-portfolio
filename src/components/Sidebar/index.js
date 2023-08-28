@@ -5,20 +5,7 @@
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
  import {faHome, faUser, faEnvelope, faGraduationCap} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
-// import {
-//   faLinkedin,
-//   faGithub,
-//   faYoutube,
-//   faSkype,
-// } from '@fortawesome/free-brands-svg-icons'
-// import {
-//   faHome,
-//   faUser,
-//   faEnvelope,
-//   faSuitcase,
-//   faBars,
-//   faClose,
-// } from '@fortawesome/free-solid-svg-icons'
+
 import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = () => {
