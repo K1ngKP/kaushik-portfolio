@@ -21,14 +21,9 @@
     }
 
     li.half {
-      width: 49%;
-      margin-left: 2%;
-      float: left;
-      clear: none;
-
-      &:first-child {
-        margin-left: 0;
-      }
+      width: 100%; // Change this to occupy full width on smaller screens
+      margin-left: 0; // No margin needed for full width
+      float: none; // No float for full width
     }
   }
 
