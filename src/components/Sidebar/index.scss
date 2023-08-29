@@ -1,5 +1,5 @@
 .nav-bar {
-  background: #181818;
+  background: #242582;
   width: 60px;
   height: 100%;
   position: absolute;
@@ -34,7 +34,7 @@
 
     a {
       font-size: 22px;
-      color: #4d4d4e;
+      color: #EDF5E1;
       display: block;
       line-height: 51px;
       height: 51px;
@@ -46,7 +46,7 @@
       }
 
       &:hover {
-        color: #ffd700;
+        color: #f64c72;
 
         svg {
           opacity: 0;
@@ -98,7 +98,7 @@
 
     a.active {
       svg {
-        color: #ffd700;
+        color: #f64c72;
       }
     }
   }
@@ -124,7 +124,7 @@
 
       &:hover {
         .anchor-icon {
-          color: #ffd700;
+          color: #f64c72;
         }
       }
     }
@@ -143,6 +143,22 @@
     height: auto;
     min-height: auto;
 
+    .logo {
+      display: block;
+      padding: 8px 0;
+  
+      img {
+        display: block;
+        margin: 8px auto;
+        width: 24px;
+        height: auto;
+  
+        &.sub-logo {
+          width: 50px;
+          flood-color: #05386B;
+        }
+      }
+    }
      ul, nav {
       display: none;
      }
@@ -153,7 +169,7 @@
       align-items: center;
       top: 0;
       left: 0;
-      background: #181818;
+      background: #242582;
       height: 100%;
       margin: 0;
       z-index: 2;
@@ -177,7 +193,7 @@
       }
 
       a svg {
-        opacity: 1 !important;
+        opacity: 1 ;
       }
      }
 

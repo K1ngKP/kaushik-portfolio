@@ -27,7 +27,7 @@ const Sidebar = () => {
            activeclassname="active" 
            to="/"
            onClick={() => setShowNav(false)}>
-           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
+           <FontAwesomeIcon icon={faHome} color="#EDF5E1" />
          </NavLink>
          <NavLink 
            exact="true"
@@ -35,7 +35,7 @@ const Sidebar = () => {
            className="about-link"
            to="/about"
            onClick={() => setShowNav(false)}>
-           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+           <FontAwesomeIcon icon={faUser} color="#EDF5E1" />
          </NavLink>
          <NavLink 
            exact="true"
@@ -43,7 +43,7 @@ const Sidebar = () => {
            className="about-grad"
            to="/education"
            onClick={() => setShowNav(false)}>
-           <FontAwesomeIcon icon={faGraduationCap} color="#4d4d4e" />
+           <FontAwesomeIcon icon={faGraduationCap} color="#EDF5E1" />
          </NavLink>
          <NavLink 
            exact="true"
@@ -51,12 +51,12 @@ const Sidebar = () => {
            className="about-contact"
            to="/contact"
            onClick={() => setShowNav(false)}>
-           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
+           <FontAwesomeIcon icon={faEnvelope} color="#EDF5E1" />
          </NavLink>
          <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}
-          color="#ffd700"
+          color="#f64c72"
           size="3x"
           className='close-icon' />
          </nav>
@@ -67,7 +67,7 @@ const Sidebar = () => {
               rel='noreferrer' 
               href='https://www.linkedin.com/in/kaushik-pattnaik-3a7986228'
               >
-                <FontAwesomeIcon icon={faLinkedin} color="#4d4de" />
+                <FontAwesomeIcon icon={faLinkedin} color="#EDF5E1" />
               </a>
             </li>
             <li>
@@ -76,14 +76,14 @@ const Sidebar = () => {
               rel='noreferrer' 
               href='https://github.com/K1ngKP'
               >
-                <FontAwesomeIcon icon={faGithub} color="#4d4de" />
+                <FontAwesomeIcon icon={faGithub} color="#EDF5E1" />
               </a>
             </li>
           </ul>
           <FontAwesomeIcon 
           onClick={() => setShowNav(true)}
           icon={faBars}
-          color="#ffd700"
+          color="#f64c72"
           size="3x"
           className='hamburger-icon' />
     </div>

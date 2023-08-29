@@ -21,28 +21,32 @@
     }
 
     li.half {
-      width: 100%; // Change this to occupy full width on smaller screens
-      margin-left: 0; // No margin needed for full width
-      float: none; // No float for full width
-    }
+      width: 100%; 
+      margin-left: 0; 
+      float: none; 
+      }
   }
 
   input[type='text'],
   input[type='email'] {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: #553d67;
     height: 50px;
     font-size: 16px;
     color: #fff;
     padding: 0 20px;
     box-sizing: border-box;
+    
+  }
+  ::placeholder{
+    color: #99738e;
   }
 
   textarea {
     width: 100%;
     border: 0;
-    background: #115173;
+    background: #553d67;
     height: 50px;
     font-size: 16px;
     color: #fff;
@@ -52,12 +56,12 @@
   }
 
   .flat-button {
-    color: #ffd700;
+    color: #f64c72;
     font-size: 11px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
-    border: 1px solid #ffd700;
+    border: 1px solid #f64c72;
     float: left;
     border-radius: 4px;
     background: 0 0;
@@ -69,7 +73,7 @@
 }
 
 .map-wrap {
-  background: rgba(8, 253, 216, 0.1);
+  background: #553d67;
   float: right;
   width: 53%;
   height: 115%;
@@ -106,7 +110,7 @@
     font-size: 16px;
 
     span {
-      color: #ffd700;
+      color: #05368B;
     }
   }
 }
