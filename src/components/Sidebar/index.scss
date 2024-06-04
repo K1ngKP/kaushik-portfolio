@@ -1,6 +1,6 @@
 .nav-bar {
   background: #242582;
-  width: 60px;
+  width: 70px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -89,6 +89,14 @@
         content: 'CONTACT';
       }
     }
+
+    a.about-dash {
+      &:after {
+        content: 'PROJECTS';
+      }
+    }
+
+
 
     a.about-grad {
       &:after {

@@ -3,7 +3,7 @@
  import LogoS from '../../assets/images/logo-s.png'
  import LogoSubtitle from '../../assets/images/logo_sub.png'
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
- import {faHome, faUser, faEnvelope, faGraduationCap, faBars, faClose} from '@fortawesome/free-solid-svg-icons'
+ import {faHome, faUser, faEnvelope, faGraduationCap, faBars, faClose, faSuitcase} from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 
 import { Link, NavLink } from 'react-router-dom'
@@ -45,6 +45,14 @@ const Sidebar = () => {
            onClick={() => setShowNav(false)}>
            <FontAwesomeIcon icon={faGraduationCap} color="#EDF5E1" />
          </NavLink>
+         {/* <NavLink 
+           exact="true"
+           activeclassname="active"
+           className="about-dash"
+           to="/dashboard"
+           onClick={() => setShowNav(false)}>
+           <FontAwesomeIcon icon={faSuitcase} color="#EDF5E1" />
+         </NavLink> */}
          <NavLink 
            exact="true"
            activeclassname="active"
@@ -53,6 +61,7 @@ const Sidebar = () => {
            onClick={() => setShowNav(false)}>
            <FontAwesomeIcon icon={faEnvelope} color="#EDF5E1" />
          </NavLink>
+         
          <FontAwesomeIcon 
           onClick={() => setShowNav(false)}
           icon={faClose}

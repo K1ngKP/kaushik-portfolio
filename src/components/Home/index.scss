@@ -1,4 +1,16 @@
 .home-page {
+  img{
+    position: absolute;
+    border: 3px solid #f64c72;
+    padding: 3px;
+    top: 6%;
+    left: 10%;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    opacity: 1;
+  }
+  
     .text-zone {
       position: absolute;
       left: 10%;
@@ -68,7 +80,9 @@
           color: #fff;
         }
       }
+      
 }
+
 
 @media screen and (max-width: 1200px) {
   .tags,
@@ -77,6 +91,14 @@
     display: none;
   }
 
+  .home-page img{
+    opacity: 0.8;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 100%;
+    left: 30%;
+  }
   .home-page .text-zone {
     position: initial;
     width: 100%;

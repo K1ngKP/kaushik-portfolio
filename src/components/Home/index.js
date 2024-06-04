@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-
+import LogoK from '../../assets/images/logo-me.png'
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -58,6 +58,11 @@ const Home = () => {
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
+          
+        </div>
+        <img className="my-dp" src={LogoK} alt='profile'/>
+        <div classname="img-zone">
+            
         </div>
           
       </div>
